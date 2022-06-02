@@ -1,0 +1,51 @@
+
+.button {
+
+    position: relative;
+    background: none;
+    border: solid 1px #121212;
+    transition: color 200ms;
+    width: 120px;
+    height: 45px;
+    padding:25px 0 0 40px;
+    font-family:sans-serif;
+    letter-spacing:5px;
+
+}
+
+.button:hover a{
+
+    color: #fff;
+
+}
+
+.button::after{
+
+    position: absolute;
+    content: '';
+    inset: 0;
+    z-index: -1;
+    background-color: #121212;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 200ms;
+    color: #fff;
+}
+
+.button:hover::after{
+
+    transform: scale(1);
+
+}
+
+.button a{
+
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+
+}
+
+
+
+
